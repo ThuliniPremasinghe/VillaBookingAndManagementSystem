@@ -1,11 +1,12 @@
 import express, { Router } from 'express';
 import db from "../config/db.js";
-import stripePackage from 'stripe';
 // Add this import at the top of your payment router file
 import { sendPaymentConfirmation } from '../Services/paymentEmailService.js';
+import Stripe from 'stripe';
+
 
 const router = Router();
-const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
+const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
 // Helper function to wrap db.query in a promise
 const query = (sql, params) => {
