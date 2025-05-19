@@ -1,0 +1,176 @@
+/* UserProfile.css */
+.profile-container {
+    display: flex;
+    min-height: 100vh;
+   
+  }
+  
+  .profile-content {
+    flex: 1;
+    margin-left: 250px; /* Match sidebar width */
+    padding: 20px;
+    background-color: #f8f9fa;
+  }
+  
+  .profile-header {
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  }
+
+
+.user {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  color: #555;
+}
+
+.user-icon {
+  margin-left: 8px;
+  font-size: 20px;
+  color: #3498db;
+}
+  
+  .profile-view {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .profile-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .profile-section,
+  .password-section {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .password-section h3 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Adjust form styles for the grid layout */
+  .profile-section .form-group,
+  .password-section .form-group {
+    margin-bottom: 15px;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .profile-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  .profile-view p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+  }
+   /* Button container for form actions */
+.form-actions {
+  display: flex;
+  gap: 10px; /* Space between buttons */
+  margin-top: 20px; /* Space above the buttons */
+}
+
+/* If you want the buttons to align to the right */
+.form-actions-right {
+  justify-content: flex-end;
+}
+
+/* If you want the buttons to align to the left (default) */
+.form-actions-left {
+  justify-content: flex-start;
+}
+
+/* If you want the buttons centered */
+.form-actions-center {
+  justify-content: center;
+}
+  .btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 0.5rem;
+  }
+  
+  .btn-btn-primary {
+    background-color: #16569a;
+    color: white;
+  }
+  
+  .btn-btn-secondary  {
+    background-color: #721c24;
+    color: white;
+  }
+  
+  .btn-btn-success {
+    background-color: #16569a;
+    color: white;
+  }
+  
+  .btn-warning {
+    background-color: #ffc107;
+    color: #212529;
+  }
+  
+  .alert {
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+  }
+  
+  .alert-success {
+    background-color: #d4edda;
+    color: #155724;
+  }
+  
+  .alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+  }
+  
+  .mt-3 {
+    margin-top: 1rem;
+  }
+  
+  .mt-4 {
+    margin-top: 1.5rem;
+  }
+  
+  .ml-2 {
+    margin-left: 0.5rem;
+  }

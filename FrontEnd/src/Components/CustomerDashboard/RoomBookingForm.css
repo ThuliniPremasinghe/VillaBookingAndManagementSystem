@@ -1,0 +1,89 @@
+body {
+  background-color: #cde3eb; /* Change to your preferred color */
+}
+.form-container {
+  max-width: 425px;
+  margin:  auto;
+  background: #ffff;
+  padding: 50px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+
+.form-wrapper h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  margin-top: 15px;
+  font-size: 24px;
+  color: #282828;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  
+}
+
+label {
+  display: block;
+  font-weight: normal;
+  margin-bottom: 10px;
+  font-size: 14px;
+  text-align: left;
+}
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+   
+  }
+  
+  .checkbox-group input {
+    width: 16px;
+    height: 16px;
+    margin-top: 0px;
+  }
+  
+  .checkbox-group label {
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    margin-top: 20px;
+    
+  }
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #16569a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+
+  }
+  
+  .submit-btn:hover {
+    background-color: #0056b3;
+  }
+
+  .discount-notice {
+    color: #0056b3;
+    font-size: 0.8em;
+    margin-bottom: 5px;
+    margin-top: 0px;
+    
+  }

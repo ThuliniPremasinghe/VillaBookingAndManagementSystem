@@ -1,0 +1,93 @@
+/* Footer Styles */
+
+/* Auth Buttons Spacing (unchanged) */
+.auth-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 40px 0;
+  padding: 20px 0;
+}
+.footer {
+  background-color: #f8f8f8;
+  color: #333;
+  padding: 40px;
+  font-family: Arial, sans-serif;
+  border-top: 1px solid #e7e7e7;
+  width: 100%;
+  box-sizing: border-box;
+  
+  overflow: hidden;
+  text-align: justify;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  width: 100%;
+  margin: 0 auto;
+  gap: 10px;
+}
+/* Remove bullets and adjust spacing */
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  line-height: 1.6;
+
+}
+.footer-column a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-column a:hover {
+  color: #16569a;
+}
+/* Newsletter Section Fix */
+.newsletter-column {
+  max-width: 300px;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.newsletter-form input {
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.signup-btn {
+  padding: 10px 12px;
+  background-color: #16569a;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+/* Footer bottom */
+.footer-bottom {
+  text-align:center;
+  padding-top: 20px;
+  margin-top: 30px;
+  font-size: 14px;
+  color: #3f3e3e;
+  border-top: 1px solid #e7e7e7;
+  max-width: 1200px;
+  margin: 10px auto;
+}
+

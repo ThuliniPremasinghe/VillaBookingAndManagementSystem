@@ -1,0 +1,81 @@
+.review-form-container {
+    background: #ffff;
+    padding: 50px;
+    width: 100%;
+    max-width: 350px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+   margin-top: 20px;
+   margin-bottom: 20px;
+    margin-left: 400px;
+    border-radius: 5px;
+  }
+  
+  h2, h3 {
+    color: #2d3748;
+    margin-bottom: 1rem;
+    
+  }
+  
+  .rating-section, .category-ratings, .comment-section {
+    margin-bottom: 2rem;
+  }
+  
+  .category-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .star-rating {
+    display: inline-block;
+  }
+  
+  .star {
+    font-size: 20px;
+    color: lightgray;
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+  
+  .star:hover, .star.filled {
+    color: gold;
+  }
+  
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    resize: none;
+  }
+  
+  .submit-button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background: #16569a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  
+  .submit-button:hover {
+    background: #0056b3;
+  }
+  
+  .submit-button:disabled {
+    background: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  .error-message {
+    color: #e53e3e;
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    background: #fff5f5;
+    border-radius: 4px;
+  }

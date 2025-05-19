@@ -1,0 +1,435 @@
+/* Invoice.css */
+.invoice-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    margin-left: 250px;
+    background-color: white;
+  }
+  
+  .invoice-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    margin-left: 680px;
+  }
+  
+ 
+  
+  
+  .btn-print,.btn-add-charge {
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+    
+    
+    
+  }
+  .btn-add-charge{
+    background-color: #16569a;
+    color: #fff;
+    width: 175px;
+  }
+  .btn-add-charge:hover {
+    background-color: #0056b3;
+  }
+  .btn-print{ 
+    background-color: #16569a;
+    color: #fff;
+    width: 100px;
+  }
+    .btn-print:hover {
+      background-color: #0056b3;
+    }
+  
+  .invoice-paper {
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .invoice-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .hotel-info h1 {
+    margin: 0;
+    color: #2c3e50;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .hotel-info p {
+    margin: 5px 0;
+    color: #585b5b;
+    font-size: 14px;
+    text-align: justify;
+  }
+  
+  .invoice-info {
+    text-align: right;
+    margin: 0;
+    margin-top: 0;
+  }
+  
+  .invoice-info h2 {
+    margin: 0;
+    color: #2c3e50;
+    font-size: 20px;
+    
+  }
+  
+  .invoice-info p {
+    margin: 5px 0;
+    font-size:14px ;
+    color: #585b5b;
+  }
+  
+  .status-paid {
+    color: #27ae60;
+    font-weight: bold;
+  }
+  
+  .status-pending {
+    color: #f39c12;
+    font-weight: bold;
+  }
+  
+  .status-cancelled {
+    color: #e74c3c;
+    font-weight: bold;
+  }
+  
+  .invoice-customer, .invoice-stay-details {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    text-align: justify;
+    margin-left: 20px;
+    font-size: 14px;
+    margin-top: 10px;
+    
+  }
+
+  .invoice-customer p{
+     font-size: 14px;
+     margin: 3px;
+     color: #2c3e50;
+  }
+  
+  .invoice-customer h3, .invoice-stay-details h3, .invoice-charges h3 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  .stay-details-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  
+  .charges-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  .charges-table th {
+    background-color: #f8f9fa;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  .charges-table td {
+    padding: 12px 10px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .charges-table tr:last-child td {
+    border-bottom: none;
+  }
+  
+  .charge-detail {
+    font-size: 0.85em;
+    color: #7f8c8d;
+    margin-top: 5px;
+  }
+  
+  .invoice-totals {
+    margin: 30px 0;
+  }
+  
+  .totals-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    max-width: 300px;
+    margin-left: auto;
+  }
+  
+  .totals-grid div {
+    padding: 8px 0;
+  }
+  
+  .totals-grid div:nth-child(odd) {
+    text-align: right;
+  }
+  
+  .totals-grid div:nth-child(even) {
+    text-align: right;
+    font-weight: 500;
+  }
+  
+  .text-discount {
+    color: #e74c3c;
+  }
+  
+  .discount-description {
+    font-size: 0.8em;
+    font-weight: normal;
+  }
+  
+  .grand-total-label {
+    font-weight: bold;
+    font-size: 1.1em;
+    border-top: 2px solid #ddd;
+    padding-top: 12px;
+  }
+  
+  .grand-total-amount {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #2c3e50;
+    border-top: 2px solid #ddd;
+    padding-top: 12px;
+  }
+  
+  .invoice-payment {
+    margin: 30px 0;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+  }
+  
+  .payment-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 15px;
+  }
+  
+  .payment-grid div:nth-child(odd) {
+    font-weight: 500;
+  }
+  
+  .payment-grid div:nth-child(even) {
+    text-align: right;
+  }
+  
+  .balance-due {
+    color: #e74c3c;
+    font-weight: bold;
+  }
+  
+  .balance-paid {
+    color: #27ae60;
+    font-weight: bold;
+  }
+  
+  .invoice-footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    text-align: center;
+    color: #7f8c8d;
+    font-size: 0.9em;
+  }
+  
+  .footer-note {
+    margin-top: 15px;
+    font-style: italic;
+  }
+  
+  /* Print styles */
+  @media print {
+    .invoice-actions {
+      display: none;
+    }
+  
+    .invoice-paper {
+      box-shadow: none;
+      padding: 0;
+    }
+  
+    body {
+      background: none;
+      font-size: 12pt;
+    }
+  }
+  
+  /* Loading and error states */
+  .invoice-loading, .invoice-error, .invoice-not-found {
+    text-align: center;
+    padding: 50px;
+    font-size: 1.2em;
+  }
+  
+  .invoice-error {
+    color: #e74c3c;
+  }
+
+  /* Add these styles to your Invoice.css */
+  .modal-content{
+    max-width: 425px;
+  }
+.predefined-charges-list {
+    max-height: 60vh;
+    overflow-y: auto;
+    margin: 15px 0;
+   
+  }
+  
+  .predefined-charges-list table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .predefined-charges-list th, 
+  .predefined-charges-list td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .predefined-charges-list th {
+    background-color: #f2f2f2;
+  }
+  
+  .btn-select {
+    background-color: #16569a;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    
+  }
+  
+  .btn-select:hover {
+    background-color: #0056b3;
+  }
+
+  .modal-actions{
+   
+    .btn-secondary{
+      font-weight: normal;
+      
+      
+    }
+  }
+  
+  .btn-add-custom {
+    background-color: #16569a;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .btn-add-custom:hover {
+    background-color: #0056b3;
+  }
+
+  .quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .quantity-input {
+    width: 50px;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 0px;
+  }
+  
+  .quantity-btn {
+    padding: 5px 0px;
+    background: #f0f0f0;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    background-color: #16569a;
+    color: white;
+    width: 50px;
+   border-radius: 3px;
+  }
+  
+  .quantity-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .quantity-actions {
+    display: flex;
+    gap: 5px;
+    margin-left: 10px;
+  }
+  
+  .btn-edit {
+    padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+    background-color: #16569a;
+    color: white;
+    width: 100px;
+    margin-left: 60px;
+  }
+  
+  .btn-edit:hover {
+    background-color: #0056b3;
+  }
+  
+  .btn-save {
+    padding: 5px 15px;
+    background: #16569a;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 14px;
+  }
+  
+  .btn-cancel {
+    padding: 5px 10px;
+    background: #a71d2a;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 14px;
+  }
+  .btn-cancel:hover{
+    background-color: #b82030;
+  }
+
+  .btn-checkout{width: 200px;
+  margin-left: 700px;
+}

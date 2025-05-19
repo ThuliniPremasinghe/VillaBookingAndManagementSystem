@@ -1,0 +1,105 @@
+/* General container */
+.Staff-container {
+  display: flex;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+/* Wrapper for content */
+.Staff-wrapper {
+  flex: 1;
+  padding: 20px;
+  margin-left: 250px; /* Adjust for sidebar */
+}
+
+/* Header section */
+.Staff-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #ddd;
+}
+
+/* Button Styles */
+.add-staff-btn {
+  width: 15%;
+  padding: 10px;
+  background-color: #16569a;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  display:block;
+  margin-left: 85%;
+}
+
+.add-staff-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Staff Table */
+.staff-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.staff-table th,
+.staff-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.staff-table th {
+  background-color: #f4f4f4;
+  text-align: center;
+
+}
+.action-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; /* Spacing between buttons */
+  
+}
+
+.edit-btn, .delete-btn {
+  font-size: 14px;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+ 
+}
+
+.edit-btn {
+  background-color: #16569a;
+}
+
+.edit-btn:hover {
+  background-color: #0056b3;
+}
+
+.delete-btn {
+  background-color: #a71d2a;
+}
+
+.delete-btn:hover {
+  background-color: #b82030;
+}
+
+
+
+/* User info */
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-icon {
+  font-size: 24px;
+}
+
+

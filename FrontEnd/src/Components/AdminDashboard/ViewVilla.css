@@ -1,0 +1,207 @@
+
+/* General container */
+.ViewVilla-container {
+  display: flex;
+  background-color: #f8f9fa;
+ 
+}
+
+/* Wrapper for content */
+.ViewVilla-wrapper {
+  flex: 1;
+  padding: 20px;
+  margin-left: 250px; /* Adjust for sidebar */
+  background-color: #f8f9fa;
+}
+
+/* Header section */
+.ViewVilla-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #ddd;
+}
+
+/* User info */
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-icon {
+  font-size: 24px;
+}
+
+.villa-list {
+  display: flex;
+  flex-wrap: nowrap;  /* Keep villas in a horizontal row */
+  gap: 20px;  /* Space between each villa */
+  overflow-x: auto;  /* Allows horizontal scrolling */
+  padding-bottom: 20px;
+}
+
+/* Grid of villas inside the list */
+.villa-grid {
+  display: flex;
+  flex-wrap: nowrap; /* Ensures no wrapping */
+  gap: 20px;  /* Adds space between each villa */
+  width: 100%;
+}
+
+/* Villa card styling */
+.villa-card {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  min-width: 300px; /* Ensures each villa has a set width */
+  flex: 0 0 auto; /* Prevents flex-grow and ensures it stays a fixed size */
+  text-align: justify;
+}
+
+/* Villa title and description */
+.villa-card h3 {
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  color: #333;
+  text-align: justify;
+}
+
+.villa-card p {
+  margin: 5px 0;
+  text-align: justify;
+  font-size:14px;
+}
+
+.villa-amenities ul {
+  padding-left: 20px;
+  list-style-type: disc;
+  text-align: justify;
+  font-size:14px;
+  margin-top: 5px;
+}
+
+.villa-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.no-villas {
+  font-size: 1.2rem;
+  color: #888;
+}
+.villa-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; /* Spacing between buttons */
+  
+}
+
+.edit-btn, .delete-btn {
+  font-size: 14px;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.edit-btn {
+  background-color: #16569a;
+}
+
+.edit-btn:hover {
+  background-color: #0056b3;
+}
+
+.delete-btn {
+  background-color: #a71d2a;
+}
+
+.delete-btn:hover {
+  background-color: #b82030;
+}
+/* Room section */
+.room-section {
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
+  font-size:14px;
+}
+.room-amenities ul {
+  padding-left: 20px;
+  list-style-type: disc;
+  text-align: justify;
+  font-size:14px;
+  margin-top: 5px;
+}
+/* Room list styling */
+.room-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Room card */
+.room-card {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.room-card h5 {
+  font-size: 18px;
+  color: #333;
+}
+
+.room-card p {
+  color: #333;
+}
+
+.room-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; /* Spacing between buttons */
+  
+}
+
+/* Room images */
+.room-image {
+  width: 100%;
+  max-width: 250px;
+  height: 150px;
+  border-radius: 5px;
+  margin-top: 10px;
+  border: 1px solid #ddd;
+}
+
+/* Make the page responsive for smaller screens */
+@media (max-width: 768px) {
+  .ViewVilla-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .villa-list {
+    flex-wrap: wrap; /* Stacks villas vertically on smaller screens */
+    justify-content: center;
+  }
+
+  .villa-card {
+    min-width: 100%; /* Ensure each villa takes full width on mobile */
+  }
+
+  .villa-image {
+    min-width: 100%;  /* Ensures image is responsive */
+    
+  }
+
+  .room-image {
+    min-width: 100%;  /* Ensures room image is responsive */
+  }
+}

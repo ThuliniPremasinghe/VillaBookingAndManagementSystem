@@ -1,0 +1,261 @@
+/* General Styles */
+
+.homepage-container{background: 
+  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+  url("C:\Users\Thulini\Pictures\Saved Pictures\mc-dadnn-infinity-pool-31345_Classic-Hor.jpg") center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+  text-align: center;
+  flex-direction: column;
+  }
+
+
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+  color: #fff;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-top: 10px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #cde3eb;
+
+}
+
+.homepage-logo {
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin-right: 20px;
+  color: #222;
+}
+
+.nav-links li {
+  cursor: pointer;
+}
+.nav-links li:hover {
+  text-decoration:underline;
+  
+}
+/* Search Filters Section */
+.search-filters {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Ensures all elements align vertically */
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 30px;
+  background-color: #1a2a3a;
+  margin-left: 20px;
+  margin-right:20px;
+}
+/* Guest Dropdown */
+.guest-dropdown {
+  position: relative;
+}
+
+.guest-dropdown-btn {
+  padding: 12px 20px;
+  width: auto; /* Adjust width dynamically */
+  min-width: 160px; /* Ensure a reasonable width */
+  height: 42px;
+  border-radius: 5px; /* More rounded corners for a modern look */
+  border: 1px solid #999;
+  background-color: white; /* Matching the button in the image */
+  color: black;
+  font-size: 16px;
+  font-weight: normal;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 15px;
+  }
+  .guest-dropdown-btn:hover {
+    background-color: white; /* Same as the default background */
+
+  }
+
+
+.guest-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 160px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.guest-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.guest-title {
+  font-weight: bold;
+}
+
+.guest-subtitle {
+  font-size: 12px;
+  color: gray;
+}
+
+.guest-counter {
+  display: flex;
+  align-items: center;
+}
+
+.guest-counter button {
+  width: 25px;
+  height: 25px;
+  border: none;
+  background-color: #1a2a3a;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.guest-counter span {
+  margin: 0 8px;
+  font-size: 16px;
+}
+
+/* Style for Select, Input, and Button */
+.search-filters select,
+.search-filters input,
+.search-btn {
+  padding: 10px;
+  width: 180px;
+  height: 42px; /* Ensure same height for all elements */
+  border: 1px solid #999;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+  margin-top:auto;
+}
+
+/* Fix Search Button Alignment */
+.search-btn {
+  background-color: #fff;
+  color: black;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  width: 180px;
+  height: 42px; /* Ensure it's exactly the same height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: normal; /* Prevents extra button padding issues */
+  padding: 10px;
+}
+
+
+
+/* Authentication Buttons */
+.auth-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+
+  
+}
+
+.register-button,
+.login-button {
+  padding: 10px;
+  width: 150px;
+  background-color: #1a2a3a;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  font-weight: normal;
+  
+}
+/* Image Gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 20px;
+}
+
+.gallery-item {
+  text-align: center;
+}
+
+.gallery-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+
+
+
+
+.date-input-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 5px;
+}
+
+.date-input-container label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="date"] {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.booked-date {
+  background-color: #ffebee;
+  border-color: #ffcdd2;
+}
+
+.date-warning {
+  color: #f44336;
+  font-size: 0.8rem;
+  margin-top: 3px;
+}

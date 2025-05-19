@@ -1,0 +1,159 @@
+.register-staff-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #cde3eb;
+  }
+  
+  .register-staff-form {
+    background: #ffff;
+    padding: 50px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+  
+  .register-staff-form h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 15px;
+    font-size: 24px;
+    color: #282828;
+  
+  }
+  
+  .register-staff-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    color: #333333;
+    text-align: left;
+  
+  }
+  
+  .register-staff-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #3a3939;
+  }
+  
+  /* Terms Section */
+  .terms {
+    display: flex;
+    text-align: left;
+    font-size: 12px;
+    margin-bottom: 20px;
+    margin-top: 20px; 
+    margin-left: auto;
+  }
+  
+  .terms input {
+    margin-right: 5px; /* Space between checkbox and text */
+    cursor: pointer;
+    width: 10%;
+  }
+  
+  .terms a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .terms a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  .register-staff-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #16569a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .register-staff-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .error-message {
+    color: #da2d2d;
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  /* Responsive Adjustments */
+@media (max-width: 768px) {
+  .register-staff-container {
+    padding: 15px;
+    align-items: flex-start;
+    min-height: calc(100vh - 30px);
+  }
+
+  .register-staff-form {
+    padding: 25px;
+    margin-top: 20px;
+  }
+
+  .register-staff-form h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  .register-staff-form input {
+    padding: 10px;
+  }
+
+  .terms {
+    font-size: 12px;
+    margin: 15px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .register-staff-form {
+    padding: 20px;
+  }
+
+  .register-staff-form h2 {
+    font-size: 20px;
+  }
+
+  .register-staff-form label {
+    font-size: 13px;
+  }
+
+  .register-staff-form input {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .register-staff-form button {
+    padding: 10px;
+    font-size: 15px;
+  }
+
+  .error-message {
+    font-size: 12px;
+  }
+}
+
+/* For very small devices */
+@media (max-width: 360px) {
+  .register-staff-form {
+    padding: 15px;
+  }
+
+  .terms {
+    font-size: 11px;
+  }
+}

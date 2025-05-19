@@ -1,0 +1,170 @@
+.unified-payment-container {
+    max-width: 480px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-family: 'Arial', sans-serif;
+    color: #2c3e50;
+}
+
+.payment-form {
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+}
+
+.payment-header {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #2c3e50;
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.payment-summary {
+    background: white;
+    
+    padding: 5px;
+    margin-bottom: 30px;
+    
+}
+
+.summary-title {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #445565;
+    font-weight: bold;
+    text-align:left ;
+
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0px;
+    font-size: 14px;
+}
+
+.summary-item.highlight {
+    font-weight: 500;
+    padding-top: 10px;
+    border-top: 1px solid #eaeef2;
+    margin-top: 10px;
+    color: #2c3e50;
+    
+}
+
+.amount {
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+.payment-details {
+    margin-bottom: 25px;
+}
+
+.payment-details-title {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #445565;
+    font-weight: bold;
+    text-align: left;
+}
+
+.payment-details-group {
+    margin-bottom: 10px;
+}
+
+.payment-details-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #4a5568;
+    font-weight: 500;
+}
+
+.card-input {
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    background-color: white;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+}
+
+.form-row .payment-details-group {
+    flex: 1;
+}
+
+.payment-footer {
+    margin-top: 2px;
+    
+}
+
+.payment-error {
+    color: #e53e3e;
+    background: #fff5f5;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    text-align: center;
+    border: 1px solid #fed7d7;
+}
+
+.submit-button {
+    width: 100%;
+  padding: 12px;
+  background-color: #16569a;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: normal;
+  transition: background-color 0.2s;
+  margin-top: 5px;
+}
+
+.submit-button:hover {
+    background: #0c427b;
+}
+
+.submit-button:disabled {
+    background: #cbd5e0;
+    cursor: not-allowed;
+}
+
+.booking-notice {
+    font-size: 13px;
+    color: #718096;
+    text-align: center;
+    line-height: 1.5;
+    padding-top: 15px;
+    border-top: 1px solid #eaeef2;
+}
+
+.booking-notice p {
+    margin: 5px 0;
+}
+
+@media (max-width: 480px) {
+    .unified-payment-container {
+        padding: 0 15px;
+    }
+    
+    .payment-form {
+        padding: 20px;
+    }
+    
+    .form-row {
+        flex-direction: column;
+        gap: 15px;
+    }
+}

@@ -1,0 +1,116 @@
+.frontdesk-check-in-container {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+  }
+  
+  .frontdesk-check-in-content {
+    flex: 1;
+    padding: 20px;
+    margin-left: 250px; /* Adjust based on your sidebar width */
+  }
+  
+  .frontdesk-check-in-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .frontdesk-check-in-header h2 {
+    color: #333;
+    font-size: 24px;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .user-name {
+    font-weight: 500;
+    color: #444;
+  }
+  
+  .user-icon {
+    font-size: 20px;
+    color: #555;
+    background-color: #f8f9fa;
+    padding: 8px;
+    border-radius: 50%;
+  }
+  
+  .table-responsive {
+    overflow-x: auto;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .check-in-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .check-in-table th,
+  .check-in-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    
+  }
+  
+  .check-in-table th {
+    background-color: #bddbee;
+    text-align: center;
+  color: #333;
+  
+  
+  }
+  
+  
+  
+  .action-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px; /* Spacing between buttons */
+    
+  }
+  
+  .checkout-btn, .delete-btn {
+    font-size: 14px;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+   
+  }
+  
+  .checkout-btn {
+    background-color: #16569a;
+  }
+  
+  .checkout-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  
+  
+  .loading-text,
+  .no-data {
+    text-align: center;
+    padding: 20px;
+    color: #6c757d;
+  }
+  
+  .error-message {
+    color: #dc3545;
+    background-color: #f8d7da;
+    padding: 10px 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    border: 1px solid #f5c6cb;
+  }
