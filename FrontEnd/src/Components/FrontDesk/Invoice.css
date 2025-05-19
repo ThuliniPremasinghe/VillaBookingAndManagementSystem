@@ -433,3 +433,47 @@
   .btn-checkout{width: 200px;
   margin-left: 700px;
 }
+
+/* Base Styles (mobile-first approach) */
+.invoice-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  background-color: white;
+}
+
+.invoice-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.btn-checkout {
+  width: 100%;
+  margin-left: 0;
+}
+
+/* Desktop Styles */
+@media screen and (min-width: 768px) {
+  .invoice-container {
+    max-width: 1200px;
+    margin-left: 250px;
+    padding: 20px;
+  }
+
+  .invoice-actions {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 680px;
+  }
+
+  .btn-checkout {
+    width: 200px;
+    margin-left: 700px;
+  }
+}

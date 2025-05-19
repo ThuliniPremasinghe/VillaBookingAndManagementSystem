@@ -82,10 +82,11 @@ const ManagerPending = () => {
           <table className="pending-bookings-table">
             <thead>
               <tr>
-              <th>ID</th>
-                <th>Customer Name</th>
-                <th>Contact Number</th>
-                <th>Reserved Date</th>
+              <th> ID</th>
+                <th>Guest Name</th>
+                <th>Contact</th>
+                <th>Check-In</th>
+                <th>Check-Out</th>
                 <th>Category</th>
                 <th>Status</th>
                 
@@ -100,10 +101,11 @@ const ManagerPending = () => {
                 pendingBookings.map((booking) => (
                   <tr key={booking.id}>
                      <td>{booking.id}</td>
-                    <td>{booking.customerName}</td>
-                    <td>{booking.contactNumber || "N/A"}</td>
-                    <td>{new Date(booking.reservedDate).toLocaleDateString()}</td>
-                    <td>{booking.category || "N/A"}</td>
+                    <td>{booking.guest_name}</td>
+                    <td>{booking.contact_number || "N/A"}</td>
+                    <td>{new Date(booking.check_in_date).toLocaleDateString()}</td>
+                    <td>{new Date(booking.check_out_date).toLocaleDateString()}</td>
+                    <td>{booking.propertyType || booking.propertyType}</td>
                     <td>
                       <span className={`status-badge ${booking.status.toLowerCase()}`}>
                         {booking.status}

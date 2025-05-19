@@ -88,3 +88,105 @@
     margin-bottom: 20px;
     border: 1px solid #f5c6cb;
   }
+
+  /* Desktop layout */
+@media screen and (min-width: 768px) {
+  .Manager-check-out-container {
+    flex-direction: row;
+  }
+
+  .Manager-check-out-content {
+    margin-left: 250px; /* Adjust for sidebar */
+  }
+}
+
+.Manager-check-out-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+@media screen and (min-width: 600px) {
+  .Manager-check-out-header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.Manager-check-out-header h2 {
+  color: #333;
+  font-size: 22px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-name {
+  font-weight: 500;
+  color: #444;
+}
+
+.user-icon {
+  font-size: 20px;
+  color: #555;
+  background-color: #f8f9fa;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+.table-responsive {
+  overflow-x: auto;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.check-out-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.check-out-table th,
+.check-out-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.check-out-table th {
+  background-color: #a5d5f3;
+  text-align: center;
+}
+
+/* Slightly larger font for bigger screens */
+@media screen and (min-width: 768px) {
+  .check-out-table {
+    font-size: 16px;
+  }
+}
+
+.loading-text,
+.no-data {
+  text-align: center;
+  padding: 20px;
+  color: #6c757d;
+}
+
+.error-message {
+  color: #dc3545;
+  background-color: #f8d7da;
+  padding: 10px 15px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  border: 1px solid #f5c6cb;
+}

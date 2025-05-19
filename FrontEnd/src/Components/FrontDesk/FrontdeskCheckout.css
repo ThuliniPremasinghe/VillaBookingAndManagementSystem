@@ -89,3 +89,78 @@
     margin-bottom: 20px;
     border: 1px solid #f5c6cb;
   }
+
+  /* Responsive Adjustments */
+@media (min-width: 768px) {
+  .frontdesk-check-out-content {
+    margin-left: 250px; /* Sidebar width */
+    padding: 20px;
+  }
+
+  .frontdesk-check-out-header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .check-out-table th,
+  .check-out-table td {
+    padding: 10px;
+    font-size: 15px;
+  }
+
+  .user-name {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 992px) {
+  .frontdesk-check-out-header h2 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .frontdesk-check-out-header h2 {
+    font-size: 20px;
+  }
+
+  .user-icon {
+    font-size: 16px;
+    padding: 5px;
+  }
+
+  .check-out-table th,
+  .check-out-table td {
+    padding: 6px;
+    font-size: 13px;
+  }
+
+  .error-message {
+    font-size: 13px;
+    padding: 8px 12px;
+  }
+}
+
+/* Print styles */
+@media print {
+  .frontdesk-check-out-container {
+    background-color: white;
+  }
+
+  .table-responsive {
+    box-shadow: none;
+    overflow: visible;
+  }
+
+  .check-out-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .check-out-table th {
+    background-color: #f2f2f2 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
