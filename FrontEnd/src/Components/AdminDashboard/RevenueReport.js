@@ -1,19 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { 
-  DatePicker, 
-  Table, 
-  Card, 
-  Statistic, 
-  Tabs, 
-  Row, 
-  Col,
-  Radio,
-  Space,
-  Alert,
-  Button,
-  notification,
-  Spin,
-  Empty
+import {  DatePicker, Table, Card, Statistic, Tabs, Row, Col,Radio,Space,Alert,Button,notification,Spin,Empty
 } from 'antd';
 import axios from 'axios';
 import moment from 'moment';

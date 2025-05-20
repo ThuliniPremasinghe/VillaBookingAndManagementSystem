@@ -89,7 +89,11 @@ const ManagerSidebar = () => {
           </Link>
         </li>
 
-        
+        <li>
+                  <Link to="/managerreport">
+                    <AiOutlineBarChart className="icon" /> {isOpen && <span>Report</span>}
+                  </Link>
+                </li>
 
           <li>
                 <Link to={`/managerprofile/${userId}`}>  {/* Changed from /frontdeskprofile */}

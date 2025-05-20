@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes,Navigate } from 'react-router-dom';
 import React from 'react';
 import Login from "./Components/Login/Login";
 import ResetPassword from './Components/Login/ResetPassword';
@@ -50,68 +50,86 @@ import AdminUserProfile from './Components/AdminDashboard/AdminUserProfile';
 import ManagerUserProfile from './Components/ManagerDashboard/ManagerUserProfile';
 
 
+import {
+ 
+  AdminRoutes,
+  ManagerRoutes,
+  FrontDeskRoutes,
+  CustomerRoutes
+} from './Components/ProtectedRoute';
+
 
 export default function Main() {
-    return (
-        <BrowserRouter>
-          <Routes>
-              <Route path='/register' element={<RegisterForm/>}></Route>
-              <Route path='/HomePage' element={<HomePage/>}></Route>
-              <Route path='/propertypage' element={<PropertyPage/>}></Route>
-              <Route path='/footer' element={<Footer/>}></Route>
-          
-              <Route path='/reviewsdashboard' element={<ReviewsDashboard/>}></Route>
-              <Route path="/review/:villaId" element={<ReviewForm />} />
+  return (
+    <BrowserRouter>
+      <Routes>
+        {/* Public routes */}
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<RegisterForm />} />
+        <Route path="/reset-password" element={<ResetPassword />} />
+        <Route path="/forgot-password" element={<ForgotPassword />} />
+        <Route path="/HomePage" element={<HomePage />} />
+        <Route path="/propertypage" element={<PropertyPage />} />
+        <Route path="/footer" element={<Footer />} />
+        <Route path="/reviewsdashboard" element={<ReviewsDashboard />} />
+        <Route path="/review/:villaId" element={<ReviewForm />} />
+        <Route path="/booknow" element={<BookNow />} />
 
-              <Route path="/login" element={<Login />} /> 
-              <Route path="/reset-password" element={<ResetPassword />} />             
-              <Route path='/forgot-password' element={<ForgotPassword/>}></Route>              
-              <Route path='/adminsidebar' element={<AdminSidebar/>}></Route>
-              <Route path="/adminbookingmanagement" element={<AdminBookingManagement />} />
-              <Route path="/adminstaffmanagement" element={<AdminStaffManagement />} />
-              <Route path="/editmanager/:id" element={<EditManager />} />
-              <Route path="/profile/:id" element={<UserProfile />} />
-              <Route path="/adminprofile/:id" element={<AdminUserProfile />} />
-              <Route path="/managerprofile/:id" element={<ManagerUserProfile />} />
-              <Route path="/editvilla/:id" element={<EditVilla />} />
-              
-<Route path="/editroom/:roomId" element={<EditRoom />} />
-              <Route path="/addmanagers" element={<AddManagers />} />
-              <Route path="/adminvillamanagement" element={<AdminVillaManagement />} />
-              <Route path="/viewvilla" element={<ViewVilla />} />
-              <Route path="/adminmanagement" element={<AdminManagement />} />
-              
-              <Route path='/managersidebar' element={<ManagerSidebar/>}></Route>
-              <Route path='/managerpending' element={<ManagerPending/>}></Route>
-              <Route path='/managercheckin' element={<ManagerCheckin/>}></Route>
-              <Route path='/managercheckout' element={<ManagerCheckout/>}></Route>
-              <Route path='/managercancellation' element={<ManagerCancellation/>}></Route>
-              <Route path="/addingRooms" element={<AddingRooms />} />
-              <Route path="/addingVilla" element={<AddingVilla />} />
-              <Route path="/villabookingform/:id" element={<VillaBookingForm />} />
-<Route path="/roombookingform/:id" element={<RoomBookingForm />} />
+        {/* Admin routes */}
+        <Route element={<AdminRoutes />}>
+          <Route path="/admindashboard/:userId" element={<AdminDashboard />} />
+          <Route path="/adminsidebar" element={<AdminSidebar />} />
+          <Route path="/adminbookingmanagement" element={<AdminBookingManagement />} />
+          <Route path="/adminstaffmanagement" element={<AdminStaffManagement />} />
+          <Route path="/editmanager/:id" element={<EditManager />} />
+          <Route path="/adminprofile/:id" element={<AdminUserProfile />} />
+          <Route path="/editvilla/:id" element={<EditVilla />} />
+          <Route path="/editroom/:roomId" element={<EditRoom />} />
+          <Route path="/addmanagers" element={<AddManagers />} />
+          <Route path="/adminvillamanagement" element={<AdminVillaManagement />} />
+          <Route path="/viewvilla" element={<ViewVilla />} />
+          <Route path="/adminmanagement" element={<AdminManagement />} />
+          <Route path="/addingRooms" element={<AddingRooms />} />
+          <Route path="/addingVilla" element={<AddingVilla />} />
+          <Route path="/reports/revenue" element={<RevenueReport />} />
+        </Route>
 
-              <Route path="/feedback" element={<Feedback />} />
-              <Route path="/booknow" element={<BookNow />} />
-              <Route path="/frontdesksidebar" element={<FrontDeskSidebar/>} />
-              <Route path="/frontdeskpending" element={<FrontdeskPending/>} />
-              <Route path="/frontdeskcheckin" element={<FrontdeskCheckin/>} />
-              <Route path="/frontdeskcheckout" element={<FrontdeskCheckout/>} />
-              <Route path="/frontdeskcancellation" element={<FrontdeskCancellation/>} />
-              <Route path="/admindashboard/:userId" element={<AdminDashboard />} />
-  <Route path="/managerdashboard/:userId" element={<ManagerDashboard />} />
-  <Route path="/frontdeskdashboard/:userId" element={<FrontDeskDashboard />} />
-           
-            <Route path="/payment" element={<Payment />} />
-            <Route path="/checkoutpage" element={<CheckoutPage />} />
-            <Route path="/reports/revenue" element={<RevenueReport/>} />
-            <Route path="/chargesmanagement" element={<ChargesManagement/>} />
-            <Route path="/invoice/:bookingId" element={<Invoice />} />
-        
-            </Routes>
-       
-        
-        
-      </BrowserRouter>
-  )
+        {/* Manager routes */}
+        <Route element={<ManagerRoutes />}>
+          <Route path="/managerdashboard/:userId" element={<ManagerDashboard />} />
+          <Route path="/managersidebar" element={<ManagerSidebar />} />
+          <Route path="/managerpending" element={<ManagerPending />} />
+          <Route path="/managercheckin" element={<ManagerCheckin />} />
+          <Route path="/managercheckout" element={<ManagerCheckout />} />
+          <Route path="/managercancellation" element={<ManagerCancellation />} />
+          <Route path="/chargesmanagement" element={<ChargesManagement />} />
+          <Route path="/managerprofile/:id" element={<ManagerUserProfile />} />
+        </Route>
+
+        {/* Front Desk routes */}
+        <Route element={<FrontDeskRoutes />}>
+          <Route path="/frontdeskdashboard/:userId" element={<FrontDeskDashboard />} />
+          <Route path="/frontdesksidebar" element={<FrontDeskSidebar />} />
+          <Route path="/frontdeskpending" element={<FrontdeskPending />} />
+          <Route path="/frontdeskcheckin" element={<FrontdeskCheckin />} />
+          <Route path="/frontdeskcheckout" element={<FrontdeskCheckout />} />
+          <Route path="/frontdeskcancellation" element={<FrontdeskCancellation />} />
+          <Route path="/invoice/:bookingId" element={<Invoice />} />
+          <Route path="/profile/:id" element={<UserProfile />} />
+        </Route>
+
+        {/* Customer routes */}
+        <Route element={<CustomerRoutes />}>
+          <Route path="/villabookingform/:id" element={<VillaBookingForm />} />
+          <Route path="/roombookingform/:id" element={<RoomBookingForm />} />
+          <Route path="/feedback" element={<Feedback />} />
+          <Route path="/payment" element={<Payment />} />
+          <Route path="/checkoutpage" element={<CheckoutPage />} />
+        </Route>
+
+        {/* Redirect to home by default */}
+        <Route path="*" element={<Navigate to="/HomePage" replace />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }

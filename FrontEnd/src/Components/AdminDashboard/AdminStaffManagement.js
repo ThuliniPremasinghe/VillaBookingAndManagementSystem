@@ -138,6 +138,7 @@ const AdminStaffManagement = () => {
         <table className="staff-table">
           <thead>
             <tr>
+              <th>ID</th>
               <th>Name</th>
               <th>Contact</th>
               <th>Email</th>
@@ -154,6 +155,7 @@ const AdminStaffManagement = () => {
             ) : filteredStaff.length > 0 ? (
               filteredStaff.map((member) => (
                 <tr key={member.user_id || member.id}>
+                  <td>{member.id}</td>
                   <td>{member.full_name}</td>
                   <td>{member.contact_number}</td>
                   <td>{member.email}</td>
